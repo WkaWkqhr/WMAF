@@ -1,11 +1,13 @@
 import discord, json
+import os
 from discord.ext import commands
 
 from game import Game
 
 
 # 디스코드 봇의 토큰. 디스코드 개발자 패널의 모두의 마피아 봇 토큰. 혹여나 공개될시 반드시 리젠해서 보안 문제가 일어나지 않도록 하자.
-token = "NjMxODQyMDM2NzMwOTUzNzM5.XZ8uzg.J7kXwUvvC-769N_XA3w0KK6L3jE"
+access_token = os.environ["BOT_TOKEN"]
+token = "access_token"
 
 # 디스코드 봇의 설명.
 description = "디스코드에서 채팅만으로도 즐길 수 있도록 하기 위한 봇! \n" \
